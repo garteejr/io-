@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pertemuan Dua</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Hai, kenalin aku Sucy!</h1>
+    <p>
+      Aku mahasiswa baru Universitas Sriwijaya angkatan 2025.  
+      Aku nekat ambil jurusan IT, walau belum tau apa yang akan terjadi ke depan.  
+      Tapi aku ingin menjalaninya dengan hati yang kuat.
+    </p>
+    <p>
+      Dan buat kamu, Tegar Eleven — aku harap kamu bisa terus berbagi ilmu.  
+      Aku ingin belajar lebih banyak dari kamu. Terima kasih ya! 🤍
+    </p>
+
+    <button class="tombol" onclick="openPopup()">Klik dong, plis 😳👉👈</button>
+
+    <!-- Popup -->
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <p>
+          Selamat ya! 🎉<br><br>
+          Kamu udah sejauh ini, udah berani mencoba, belajar, dan terus berjalan walaupun kadang ragu.<br><br>
+          Teruskan langkahmu ya! Jangan takut salah, jangan takut gagal.<br>
+          Aku percaya kamu bisa lebih dari yang kamu bayangkan. 💖
+        </p>
+        <button onclick="closePopup()">Tutup</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openPopup() {
+      document.getElementById("popup").style.display = "flex";
+    }
+
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script>
+</body>
+</html>
